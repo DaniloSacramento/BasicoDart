@@ -1,11 +1,14 @@
-class Pessoa{
-  String ? nome;
-  String ? sobrenome;
+abstract class Pessoa {
+  String? nome;
+  String? sobrenome;
 
-  Pessoa({this.nome, this.sobrenome});
+ 
+  Pessoa({
+    this.nome,
+    this.sobrenome,
+  });
 
-
-  nomeCompleto(){
+  nomeCompleto() {
     return "${this.nome} ${this.sobrenome}";
   }
 }
